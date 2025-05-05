@@ -9,9 +9,9 @@ export const Header = () => {
             </Link>
             {/* <Text>Pesquise alguma coisa</Text> */}
             <View style={styles.headerNavbar}>
-                <Link href={ {pathname: 'user' }}><Text style={styles.headerNavLink}>User</Text></Link>
-                <Link href={ {pathname: 'cart' }}><Text style={styles.headerNavLink}>Cart</Text></Link>
-                <Link href={ {pathname: 'shop' }}><Text style={styles.headerNavLink}>Shop</Text></Link>
+                <Link href={ {pathname: 'Usuario/usuario' }}><Text style={styles.headerNavLink}>User</Text></Link>
+                <Link href={ {pathname: 'Carrinho/carrinho' }}><Text style={styles.headerNavLink}>Cart</Text></Link>
+                <Link href={ {pathname: 'Pedido/pedido' }}><Text style={styles.headerNavLink}>Shop</Text></Link>
                 {/* <Link href={ {pathname: 'menu' }}><Text>Menu</Text></Link> */}
             </View>
         </View>

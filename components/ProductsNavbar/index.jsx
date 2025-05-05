@@ -5,42 +5,42 @@ const catalogoRoupas = [
     {
         id: 0,
         dsc: 'Home',
-        path: 'home'
+        path: 'CatalogoProdutos/catalogoProdutos'
     },
     {
         id: 0,
         dsc: 'Novidades',
-        path: 'novidades'
+        path: 'CatalogoProdutos/catalogoProdutos'
     },
     {
         id: 0,
         dsc: 'Populares',
-        path: 'populares'
+        path: 'CatalogoProdutos/catalogoProdutos'
     },
     {
         id: 0,
         dsc: 'Camisas e Moletom',
-        path: 'topwear'
+        path: 'CatalogoProdutos/catalogoProdutos'
     },
     {
         id: 0,
         dsc: 'Calças e Bermuda',
-        path: 'bottomwear'
+        path: 'CatalogoProdutos/catalogoProdutos'
     },
     {
         id: 0,
         dsc: 'Vestidos e Macacações',
-        path: 'dresses'
+        path: 'CatalogoProdutos/catalogoProdutos'
     },
     {
         id: 0,
         dsc: 'Calçados',
-        path: 'calcados'
+        path: 'CatalogoProdutos/catalogoProdutos'
     },
     {
         id: 0,
         dsc: 'Acessórios',
-        path: 'acessorios'
+        path: 'CatalogoProdutos/catalogoProdutos'
     },
 ]
 
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     },
     ProductsNavbarItemText: {
         color: 'white',
-        margin: '0 2px',
+        margin: '2px',
         textAlign: 'center' 
     }
 })

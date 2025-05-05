@@ -1,8 +1,8 @@
 import { Text, View } from "react-native";
-import { ProductsNavbar } from '../components/ProductsNavbar'
-import { Header } from "../components/Header";
+import { ProductsNavbar } from "../../components/ProductsNavbar"; 
+import { Header } from "../../components/Header";
 
-export default function Shop() {
+export default function Pedido() {
     return (
         <View>
             <Header />
