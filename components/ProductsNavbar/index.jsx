@@ -65,10 +65,10 @@ const styles = StyleSheet.create({
     ProductsNavbar: {
         display: 'flex',
         flexDirection: 'row',
-        flexWrap: 'nowrap',
+        flexWrap: 'wrap',
         alignItems: 'center',
         alignContent: 'center',
-        justifyContent: 'space-around',
+        justifyContent: 'space-between',
         width: '100%',
         margin: '0px',
         backgroundColor: '#94D2BD'
@@ -76,6 +76,7 @@ const styles = StyleSheet.create({
     ProductsNavbarItemText: {
         color: 'white',
         margin: '2px',
+        padding: 4,
         textAlign: 'center' 
     }
 })
