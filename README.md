@@ -48,3 +48,19 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+
+## Regras de Negócio para implementar
+Cada produto tem seus atributos e o tipo de produto que ele é
+Para fins de otimização, podemos implementar as seguintes funcionalidades:
+listaProdutos (Lista todos os produtos sem ordenação obrigatória)
+listaProdutosPorTipo (Lista todos os produtos de um tipo sem ordenação obrigatória)
+
+Todavia, precisamos que os Card Group tenham funcionalidade de ordenar, caso o usuário queira.
+Além disso, precisamos que eles exibam quantidades específicas de produtos por vez e ter a opção de escolher um tipo de produto para ser exibido ou não, por exemplo:
+Na página inicial, o card group precisa me mostrar 12 produtos inicialmente, mas, se eu quiser,
+eu posso clicar para ele mostrar outros 12.
+Já no catálogo de produtos, onde será um tipo específico, eu preciso mostrar 20 de uma vez
+Já no carrinho, eu preciso que ele mostre sem especifidade, mas apenas 8.
+
+Uma ideia de implementar isso é passar por parâmetro no CardGroup a quantidade de itens para serem exibidos (por padrão será 10) e um tipo específico (por padrão será all)

@@ -1,17 +1,17 @@
 import { View, StyleSheet, Text, Image, Pressable} from 'react-native'
 
 
-export const Card  = () => {
+export const Card = () => {
     return (
-        <View>
-            <Image></Image>
-            <View>
-                <Text style={styles.title}>Título do Card</Text>
-                <Text>Descrição do card</Text>
-                <Text>Preço: R$ 99,99</Text>
+        <View style={styles.card}>
+            <Image style={styles.cardImg}></Image>
+            <View style={styles.cardContent}>
+                <Text style={styles.cardTitle}>Baby TEE (Top Cropped) | Empire</Text>
+                {/* <Text style={styles.cardDesc}>Uma camisa que mostra a barriga</Text> */}
+                <Text style={styles.cardPrice}>R$ 39,99</Text>
             </View>
-            <Pressable>
-                <Text>Comprar</Text>
+            <Pressable style={styles.cardBtn}>
+                <Text style={styles.cardBtnText}>Comprar</Text>
             </Pressable>
         </View>
     )
@@ -20,18 +20,34 @@ export const Card  = () => {
 
 const styles = StyleSheet.create({
     card: {
-        padding: 20,
-        borderRadius: 10,
-        backgroundColor: '#fff',
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.1,
-        shadowRadius: 4,
-        elevation: 1,
+        borderRadius: '4px',
+        backgroundColor: '#F1FAEE',
+        width: '200px',
+        height: 'auto',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingTop: '4px',
+        boxShadow: "1px 1px 10px gray",
+        margin: '20px'
     },
-    title: {
-        fontSize: 20,
-        fontWeight: 'bold',
-        marginBottom: 10,
+    cardImg: {
+        width: "100%",
+        // height: "50%",
     },
+    cardContent: {
+        color: '#FFF'
+    },
+    cardBtn: {
+        width: "100%",
+        backgroundColor: "#E63946",
+        borderBottomLeftRadius: "4px",
+        borderBottomRightRadius: "4px"
+    },
+    cardBtnText: {
+        textAlign: "center",
+        color: "#FFF",
+        fontWeight: "500"
+    }
 });
