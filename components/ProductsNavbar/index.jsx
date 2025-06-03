@@ -68,14 +68,18 @@ const styles = StyleSheet.create({
         flexWrap: 'wrap',
         alignItems: 'center',
         alignContent: 'center',
-        justifyContent: 'space-between',
+        justifyContent: 'space-around',
         width: '100%',
+        minHeight: '5vh',
+        height: 'auto',
         margin: '0px',
         backgroundColor: '#94D2BD'
     },
     ProductsNavbarItemText: {
         color: 'white',
         margin: '2px',
+        fontWeight: 400,
+        fontSize: 16,
         padding: 4,
         textAlign: 'center' 
     }
